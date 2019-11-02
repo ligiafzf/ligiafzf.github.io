@@ -1,0 +1,77 @@
+.register-parent {
+    height: 100%;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 700px;
+}
+
+.register {
+    width: 100%;
+    max-width: 600px;
+    padding: 40px 30px 80px 30px;
+}
+
+.register-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.register-title img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+}
+
+.register .form-group label{
+    font-size: 16x;
+    width: 100%;
+}
+
+.register .form-group input{
+    font-size: 16px;
+}
+
+.register .form-group select{
+    font-size: 16px;
+}
+
+.register button {
+    width:100%;
+    margin-top: 10px;
+    border-color: grey;
+	background-color: grey;
+    color: white;
+    font-size: 16px;
+}
+.register button:hover {
+	color:white;
+    transform: scale(1.02);
+}
+
+.form {
+    margin-bottom: 15px; 
+}
+
+.form span {
+	font-size: 14px;
+}
+
+.form-row span {
+	font-size: 16px;
+}
+
+
+@media screen and (max-width:991px) {
+	.form span {
+        font-size: 14px;
+    }
+    
+    .form-row span {
+        font-size: 14px;
+    }
+}

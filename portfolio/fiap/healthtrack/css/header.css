@@ -1,0 +1,35 @@
+.flex-dashboard header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: white;   
+    padding: 10px 30px; 
+    border: 1px solid grey;
+    border-left: 0px;
+}
+
+.flex-dashboard header a {
+    text-decoration: none;
+    color: black;
+}
+
+.flex-dashboard header svg {
+    color: #72777a;
+}
+
+.flex-dashboard .fa-bars {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .flex-dashboard header a {
+        display: none;
+    }
+
+    .flex-dashboard header {
+        justify-content: flex-end;
+    }
+}

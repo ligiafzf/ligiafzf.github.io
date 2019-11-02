@@ -1,0 +1,320 @@
+main {
+    display: block;
+    height: 100%;
+    background-color: #f7f7f7;
+    width: calc(100% - 300px);
+    padding: 0px;
+    border-left: 1px solid grey;
+}
+
+main .main-content {
+    padding: 30px;
+    width: 100%;
+    height: calc (100% - 80px)
+}
+
+.main-conten::-webkit-scrollbar-track
+{
+	border: 1px solid black;
+	background-color: #F5F5F5;
+}
+
+.main-conten::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+.main-conten::-webkit-scrollbar-thumb
+{
+    background-color: #72777a;
+}
+
+.cadastrar {
+    text-align: center;
+    height: 100px;
+    width: 48%;
+    border: 1px solid grey;
+    margin-top: 40px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.gerenciar {
+    text-align: center;
+    height: 100px;
+    width: 48%;
+    border: 1px solid grey;
+    margin-top: 40px;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.1);
+    margin-left: 2%;
+    background-color: #fff;
+}
+
+.gerenciamento {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.gerenciamento a {
+    display: block;
+    color: black;
+    font-size: 18px;
+    padding-top: 35px;
+}
+
+.cadastro-form{
+    width: 100%;
+    height:400px;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color:#fff;
+    margin-top: 30px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+.cadastro-form button{
+	width: 100%;
+	border-color: grey;
+	background-color: grey;
+    color: white;
+    margin-top: 4px;
+    font-size: 18px;
+}
+
+.cadastro-form button:hover {
+	color:white;
+	transform: scale(1.02);
+}
+
+.form-group {
+    width: 100%;
+    font-size: 18px;
+}
+
+.gerenciar-table {
+    width: 100%;
+    height:100%;
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    background-color:#fff;
+    margin-top: 30px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+
+}
+
+.gerenciar-table table {
+    width: 95%;
+    margin: 15px;
+    text-align: center;
+}
+
+div.main-content-title {
+    padding: 5px 0;  
+}
+
+div.main-content-title h2{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    color: grey;
+}
+
+div.dashboard-content {
+    padding: 10px;
+}
+
+.dashboard-flex-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dashboard-box {
+    width: 100%;
+    max-width: 320px;
+    padding-top:15%; 
+    position: relative;
+    margin: 0 10px;
+    padding-bottom: 20px;
+}
+
+.dashboard-box-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.dashboard-box:hover {
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2)
+}
+
+div.box-icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    background-color:#f0eded;
+    color: #4d4d4d;   
+}
+
+div.box-icon svg {
+  font-size: 18px;
+}
+
+div.value {
+    margin-top: 23px;
+    text-transform: uppercase;
+    font-size: 23px;
+}
+
+div.type {
+    margin-top: 23px;
+    font-size: 15px;
+    color: #4d4d4d;   
+}
+
+@media screen and (max-width: 1600px) {
+    .dashboard-box {
+        width: 100%;
+        max-width: 300px;
+        padding-top:20%; 
+        position: relative;
+        margin: 0 10px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .dashboard-flex-parent {
+        flex-wrap:wrap;
+    }
+
+    .dashboard-box {
+        padding-top:0;
+        height: 240px;
+        margin: 20px;
+        padding-bottom: 20px;
+    }
+
+    .div.box-icon{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        display: block;
+        height: 100%;
+        width: calc(100%);
+        background-color: #f7f7f7;
+        z-index: 1;
+        position: relative;
+    }
+
+    .main .main-content {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .gerenciamento {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 0;
+    }
+    
+    .gerenciamento a {
+        display: block;
+        color: black;
+        font-size: 18px;
+        padding-top: 35px;
+    }
+
+    .cadastrar {
+        width: 100%;
+    }
+
+    .gerenciar {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .gerenciar-table {
+        width: 100%;
+    }
+    
+    .gerenciar-table table {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gerenciar-table table th{
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .gerenciar-table table td{
+        font-size: 13px;
+        font-weight: 300;
+    }
+
+    .gerenciar-table table tr {
+        height: 100%;
+    }
+
+    .cadastro-form{
+        padding: 20px;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1060px) {
+    div.flex-dashboard {
+        height: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .gerenciar-table table th{
+        font-size: 11px;
+        font-weight: 100;
+    }
+
+    .gerenciar-table table td{
+        font-size: 10px;
+        font-weight: 100;
+    }
+}
+
+@media (max-width: 400px) {
+    .sumir {
+        display: none;
+    }
+}

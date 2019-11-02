@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <title>Health Track</title>
+</head>
+
+<body>
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <img src="../imagens/coracao.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-home"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="selected">
+                        <i class="fas fa-user"></i>
+                        <a href="perfil.html">Perfil</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-weight"></i>
+                        <a href="gerenciamentopeso.html">Peso</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-utensils"></i>
+                        <a href="gerenciamentoalimento.html">Alimentos</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-skating"></i>
+                        <a href="gerenciamentoatividades.html">Atividade Física</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-heartbeat"></i>
+                        <a href="gerenciamentopressao.html">Pressão Arterial</a>
+                    </li>
+                    <li class="sidebar-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <a href="../index.html">Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="mainContent">
+            <header>
+                <i id="iconMenu" onclick="responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../index.html"> <i class="fas fa-sign-out-alt"></i> Sair</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>Perfil</h2>
+                </div>
+                <div class="perfil-parent">
+                    <div class="perfil">
+                        <div class="perfil-img">
+                            <div class="img">
+                            </div>
+                        </div>
+                        <div class="perfil-form">
+                            <form>
+                                <div class="form-group">
+                                    <label for="nome">Nome Completo</label>
+                                    <input type="text" class="form-control" id="nome" placeholder="Nome Completo">
+                                    <span id="msgNome"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <span id="msgEmail"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="idade">Idade</label>
+                                    <input type="number" class="form-control" id="idade" placeholder="Idade">
+                                    <span id="msgIdade"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="genre">Gênero</label>
+                                    <select class="form-control" id="genre">
+                                        <option>Masculino</option>
+                                        <option>Feminino</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="senha">Senha</label>
+                                    <input type="password" class="form-control" id="senha" placeholder="Senha">
+                                    <span id="msgSenha"></span>
+                                </div>
+                                <button type="submit" class="btn">Salvar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/perfil.js"></script>
+</body>
+
+</html>

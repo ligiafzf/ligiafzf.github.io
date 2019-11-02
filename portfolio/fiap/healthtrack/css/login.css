@@ -1,0 +1,86 @@
+.login {
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.login-form {
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-login {
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	background-image: url("../imagens/corrida.png");
+	background-repeat: no-repeat;
+}
+
+.text-header {
+	position: absolute;
+	top: 0%;
+	left: 40%;
+  }
+
+.login-form-wrapper {
+	width: 100%;
+	max-width: 400px;
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+}
+
+.login-form-wrapper button{
+	width: 100%;
+	border-color: grey;
+	background-color: grey;
+	color: white;
+}
+
+.login-form-wrapper button:hover {
+	color:white;
+	transform: scale(1.02);
+}
+
+.login-titulo {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.login-titulo img{
+	width: 130px;
+    height: 130px;
+	margin-bottom: 60px;
+}
+
+.login-cadastrar {
+	margin-top: 10px;
+}
+
+@media screen and (max-width:1280px) {
+	.banner-login {
+		width: 60%;
+		padding: 0 2%;
+	}
+}
+
+@media screen and (max-width:991px) {
+	.banner-login {
+		display: none;
+	}
+	.login-form {
+		width: 100%;
+	}
+}
+
+.form-group span {
+	font-size: 16px;
+}
